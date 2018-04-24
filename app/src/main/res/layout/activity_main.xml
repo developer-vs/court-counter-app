@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -69,13 +70,37 @@
         </LinearLayout>
 
         <!--Grey Line-->
-
-        <View
+        <android.support.constraint.ConstraintLayout
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:layout_marginBottom="96dp"
-            android:layout_marginTop="96dp"
-            android:background="@android:color/darker_gray" />
+            tools:context=".MainActivity">
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.25"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintTop_toBottomOf="@id/view1" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.25"
+                app:layout_constraintTop_toBottomOf="@id/view2" />
+
+        </android.support.constraint.ConstraintLayout>
 
         <!--Team B-->
         <LinearLayout
