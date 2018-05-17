@@ -1,4 +1,4 @@
-# (Android Nanodegree program)
+# Android Nanodegree program
 ## Court Counter Android application 
 
 
