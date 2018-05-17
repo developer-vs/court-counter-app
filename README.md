@@ -1,5 +1,5 @@
 # (Android Nanodegree program)
-# Court Counter Android application 
+## Court Counter Android application 
 
 
 The Score Keeper app gives a user the ability to keep track of the score of two different teams playing a basketball game.
