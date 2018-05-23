@@ -1,4 +1,4 @@
-# Android Nanodegree program
+# Android Basics Nanodegree Program by Google
 ## Court Counter Android application 
 
 
